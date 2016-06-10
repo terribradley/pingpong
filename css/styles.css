@@ -14,24 +14,39 @@ body {
     border: 1px solid black;
     opacity: 0.6;
 }
+.header-word:hover {
+  background-color:#D6B831;
+}
 #right-head {
-  opacity: 0.6;
+  opacity: 0.8;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 4em;
+  color: black;
+  text-align: right;
+}
+#right-head:hover {
+  -ms-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+#left-head {
+  opacity: 0.8;
   font-family: monospace;
   font-weight: bold;
   font-size: 4em;
   color: #04402F;
-  text-align: right;
+  text-align: left;
 }
-#left-head {
-opacity: 0.6;
-font-family: monospace;
-font-weight: bold;
-font-size: 4em;
-color: #04402F;
-text-align: left;
-
+#left-head:hover {
+  -ms-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
 }
-
 .content {
   padding: 50px;
   background-color: #115441;
@@ -39,7 +54,16 @@ text-align: left;
 }
 .ping-pong {
   text-align: center;
+  font-family: monospace;
+  font-size: 1.5em;
   color: white;
+}
+.btn-default:hover {
+  background: #D6B831;
+  font-family: monospace;
+}
+p {
+  font-size: .8em;
 }
 #result-list {
   text-align: center;
@@ -47,6 +71,13 @@ text-align: left;
   color: white;
   border: solid 3px white;
   background-color: #187A65;
-
-
+  font-family: monospace;
+  font-size: 2em
+}
+#result-list li:hover {
+  -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);
 }
