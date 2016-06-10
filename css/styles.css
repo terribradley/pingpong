@@ -6,7 +6,8 @@
 .ping-pong {
   text-align: center;
 }
-#result {
+#result-list {
   text-align: center;
-  
+  list-style-type: none;
+
 }

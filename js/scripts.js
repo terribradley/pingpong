@@ -1,33 +1,34 @@
 
 var pingPongFunction = function(userInput) {
-  var numbers = []
+  var answerArray = [];
 
   for (index = 1; index <= userInput; index ++) {
-    numbers.push(index);
+    answerArray.push(index);
   }
 
-  for (index = 0; index <= numbers.length; index ++) {
-    var divisiableNum = numbers.length;
+  for (index = 0; index <= answerArray.length; index ++) {
+    var divisiableNum = answerArray.length;
     for (i = divisiableNum; i > index; i--) {
-      if (numbers[i] %15 === 0) {
-      numbers.splice(i, 1, "PingPong");
-    } else if (numbers[i] %5 === 0) {
-      numbers.splice (i, 1, "Pong");
-    } else if (numbers[i] %3 === 0) {
-      numbers.splice (i, 1, "Ping");
+      if (answerArray[i] %15 === 0) {
+      answerArray.splice(i, 1, "PingPong");
+    } else if (answerArray[i] %5 === 0) {
+      answerArray.splice (i, 1, "Pong");
+    } else if (answerArray[i] %3 === 0) {
+      answerArray.splice (i, 1, "Ping");
     }
     }
-    return numbers;
+    return answerArray;
   };
 };
-
 
 
 $(document).ready(function() {
   $(".ping-pong").submit(function(event) {
     event.preventDefault();
     var input = parseInt($("#user-input").val());
-    numbers = pingPongFunction(input);
-    $("#result").text(pingPongFunction(input));
+    answerArray = pingPongFunction(input);
+    answerArray.forEach (function(number){
+      $("ul#result-list").append("<li>" + number + "</li>");
+    });
   });
 });

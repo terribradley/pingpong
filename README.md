@@ -15,8 +15,6 @@ _This website lets a user input a whole number. It will return all the numbers u
 * _clone or download the Pingpong Repository onto desktop_
 * _Open Html file in chosen browser_
 
-
-
 ## Specifications
 
 ### It can count up to inputted number
