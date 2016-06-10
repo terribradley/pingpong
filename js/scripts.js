@@ -10,11 +10,11 @@ var pingPongFunction = function(userInput) {
     var divisiableNum = numbers.length;
     for (i = divisiableNum; i > index; i--) {
       if (numbers[i] %15 === 0) {
-      numbers.splice(i,1);
+      numbers.splice(i, 1, "PingPong");
     } else if (numbers[i] %5 === 0) {
-      numbers.splice (i,1);
+      numbers.splice (i, 1, "Pong");
     } else if (numbers[i] %3 === 0) {
-      numbers.splice (i,1);
+      numbers.splice (i, 1, "Ping");
         debugger;
     }
 
