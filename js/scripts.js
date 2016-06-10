@@ -15,26 +15,12 @@ var pingPongFunction = function(userInput) {
       numbers.splice (i, 1, "Pong");
     } else if (numbers[i] %3 === 0) {
       numbers.splice (i, 1, "Ping");
-        debugger;
     }
-
-    // result = numberList.push("Ping");
-    // }
-  }
+    }
+    return numbers;
+  };
 };
-};
-      // .push("PingPong")
-    //  debugger;
 
-      // } else if (numbers[i] %3 === 0) {
-      // result = numberList.push("Ping");
-      // } else {
-      // result = numberList.push(i);
- // console.log();
-
-
-
- // };
 
 
 $(document).ready(function() {
@@ -42,5 +28,6 @@ $(document).ready(function() {
     event.preventDefault();
     var input = parseInt($("#user-input").val());
     numbers = pingPongFunction(input);
+    $("#result").text(pingPongFunction(input));
   });
 });
