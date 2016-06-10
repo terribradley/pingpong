@@ -1,13 +1,52 @@
+body {
+  background-color: #115441;
+}
+.jumbotron {
+  margin-top: 3%;
+  background-image: url(../img/header.jpg);
+  background-repeat: no-repeat;
+  border: solid 5px #302A42;
+}
+.header-word {
+    padding: 10px 10px 10px 10px;
+    background-color: #ffffff;
+    background-size: 30px 20px
+    border: 1px solid black;
+    opacity: 0.6;
+}
+#right-head {
+  opacity: 0.6;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 4em;
+  color: #04402F;
+  text-align: right;
+}
+#left-head {
+opacity: 0.6;
+font-family: monospace;
+font-weight: bold;
+font-size: 4em;
+color: #04402F;
+text-align: left;
+
+}
+
 .content {
-  margin: 10% 0%  5% 0%;
-  padding: 100px 100px 100px 100px;
-  background-color: #0080ff;
+  padding: 50px;
+  background-color: #115441;
+  color: white;
 }
 .ping-pong {
   text-align: center;
+  color: white;
 }
 #result-list {
   text-align: center;
   list-style-type: none;
+  color: white;
+  border: solid 3px white;
+  background-color: #187A65;
+
 
 }
