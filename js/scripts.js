@@ -13,8 +13,13 @@ var pingPongFunction = function(userInput) {
       numbers.splice(i,1);
     } else if (numbers[i] %5 === 0) {
       numbers.splice (i,1);
-      debugger;
+    } else if (numbers[i] %3 === 0) {
+      numbers.splice (i,1);
+        debugger;
     }
+
+    // result = numberList.push("Ping");
+    // }
   }
 };
 };
